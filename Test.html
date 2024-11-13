@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal with Subject and Attachment</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
+</head>
+<body>
+  <button id="openModalBtn">Open Modal</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script>
+    document.getElementById('openModalBtn').addEventListener('click', function() {
+      Swal.fire({
+        title: '<img src="http://ai24.aiiot.website/ai.png" style="width:50%;">',
+        html:
+        '<input id="subjectInput" class="swal2-input" placeholder="Name">' +
+        '<textarea id="subjectInput" class="swal2-textarea" placeholder="Subject"></textarea>' +
+          '<div class="input-group">' +
+          '<input type="file" id="attachmentInput" class="form-control" accept=".doc,.docx,.pdf">' +
+          '<label class="input-group-text" for="attachmentInput"><i class="bi bi-file-earmark-arrow-up"></i></label>' +
+          '</div>' +
+          '<p></p>',
+        focusConfirm: false,
+        preConfirm: () => {
+          return {
+            subject: document.getElementById('subjectInput').value,
+            attachment: document.getElementById('attachmentInput').files[0]
+          }
+        }
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Here you can handle sending the email with the provided subject and attachment
+          console.log('Subject:', result.value.subject);
+          console.log('Attachment:', result.value.attachment);
+          // You may want to handle sending the email via AJAX or any other method here
+          // For demonstration purposes, logging the subject and attachment to the console
+        }
+      });
+    });
+  </script>
+</body>
+</html>
