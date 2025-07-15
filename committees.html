@@ -28,7 +28,7 @@
   <title>AICT 24 | Home</title>
   <meta content="Artificial Intelligence and Computational Technologies: Innovations, Usage Cases, and Ethical Considerations (AICT 24)" name="AICT 24">
   <meta content="Artificial Intelligence and Computational Technologies: Innovations, Usage Cases, and Ethical Considerations" name="description">
-  <meta content="AICT conferece, conference, AICT, AICT 23,  Turkey, Cyprus, Europe, Asia, Middle East, Africa, No Fee"
+  <meta content="AICT conferece, conference, AICT, AICT 24,  Turkey, Cyprus, Europe, Asia, Middle East, Africa, No Fee"
     name="keywords">
 
   <!-- Favicons -->
@@ -71,8 +71,8 @@
     <div class="container d-flex justify-content-between">
 
       <div class="logo">
-        <h1 class="text-light"><a href="index.html">Artificial Intelligence and Computational Technologies: Innovations, Usage Cases, and Ethical Considerations
-            (AIoT)</a></h1>
+        <h4 class="text-light"><a href="index.html">Artificial Intelligence and Computational Technologies: Innovations, Usage Cases, and Ethical Considerations
+            (AIoT)</a></h4>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -172,12 +172,106 @@
                   <div class="col-lg-6 details order-2 order-lg-1 aos-init aos-animate" data-aos="fade-right"
                     data-aos-delay="20">
                     <div class="testimonials">
-                      <div class="testimonial-item">
-                        <img
-                          src="https://publons.com/media/thumbs/academic/photos/237d2171-86af-41af-804d-631473a975ff.jpg.200x200_q95_crop_detail_upscale.jpg"
-                          class="testimonial-img" alt="" width="100" height="100">
-                        <h3>Prof. Fadi Al-Turjman</h3>
-                        <h4>NEU - Cyprus</h4>
+                    <style>
+ .committee-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* default to 1 column on small screens */
+  gap: 30px;
+  padding: 20px;
+}
+
+/* adjust grid template columns for larger screens */
+@media (min-width: 768px) {
+ .committee-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on larger screens */
+  }
+}
+
+.committee-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20%;
+  width: 100%; /* adjusted width to 100% */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.committee-card:hover {
+  transform: translateY(-5px);
+}
+
+.committee-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.committee-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.committee-role {
+  color: #666;
+  font-size: 0.95em;
+  margin-bottom: 10px;
+}
+
+.committee-contact {
+  font-size: 0.85em;
+  color: #333;
+  line-height: 1.4;
+}
+
+.committee-contact a {
+  color: #0077cc;
+  text-decoration: none;
+}
+</style>
+
+<div class="committee-grid">
+  <!-- Example: Other Committee Member -->
+  <div class="committee-card" style="">
+    <img src="https://www.svgrepo.com/show/327465/person-circle.svg" alt="Chadi Altrjman" class="committee-img">
+    <div class="committee-name">Dr. Chadi Altrjman</div>
+    <div class="committee-role">Co-Editor<br>Waterloo University, Ontario, Canada</div>
+    <div class="committee-contact">
+      <strong>Bio:</strong><br>
+      Dr. Chadi Altrjman is working as an associate scientist and researcher at Near East University, Cyprus. He received his Bachelor of Engineering from the University of Waterloo, Ontario, Canada. Currently, he is involved in several smart projects that help expand his practical skills. His research interests include Artificial Intelligence and Machine Learning, Wireless Sensor Networks, Chemical Sensors, Sustainable & Renewable Energy Integration, Distributed Power Generation, and Smart Engineering Applications.
+      <br>
+      📧 <a href="mailto:cmfaltrj@uwaterloo.ca">cmfaltrj@uwaterloo.ca</a><br>
+      🌐 <a href="https://www.researchgate.net/scientific-contributions/Chadi-Altrjman-2153518360" target="_blank">ResearchGate Profile</a><br><br>
+    </div>
+  </div>
+
+  <!-- NEW: Zuheir N Khlaif -->
+  <div class="committee-card">
+    <img src="https://www.svgrepo.com/show/327465/person-circle.svg" alt="Zuheir N Khlaif" class="committee-img">
+    <div class="committee-name">Zuheir N Khlaif</div>
+    <div class="committee-role">Deputy Editor-in-Chief<br>(An-Najah Journal: Scopus Indexed)</div>
+    <div class="committee-contact">
+      Faculty of Humanities and Educational Sciences<br>
+      An-Najah National University, Nablus, Palestine<br><br>
+      📞 +970 92345113 Ext: 3326<br>
+      ☎️ +970 92345982<br>
+      📱 +970 592754908<br>
+      📧 <a href="mailto:zkhlaif@najah.edu">zkhlaif@najah.edu</a><br>
+      🌐 <a href="https://najah.edu" target="_blank">https://najah.edu</a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
                         <div class="portfolio">
                           <div class="portfolio-info">
                             <div class="portfolio-links">
@@ -188,6 +282,13 @@
                       </div>
                     </div>
                   </div>
+
+
+
+
+
+
+
                   <div class="col-lg-6 details order-2 order-lg-1 aos-init aos-animate" data-aos="fade-right"
                     data-aos-delay="20">
                     <div class="testimonials">
@@ -376,17 +477,77 @@
 
                 </div>
               </div><!-- Publicity Chairs -->
+                      <style>
+  .testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .testimonial-item {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .testimonial-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .testimonial-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #eee;
+  }
+
+  .testimonial-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .testimonial-item h4 {
+    margin: 5px 0 0;
+    font-size: 0.95em;
+    color: #777;
+  }
+</style>
 
               <div class="tab-pane" id="tab-6">
                 <div class="row details">
 
                   <div class="col-lg-6 details order-2 order-lg-1 aos-init aos-animate" data-aos="fade-right"
                     data-aos-delay="20">
-                    <div class="testimonials">
+                    <div class="testimonials" style="padding: 30px;gap:50%">
                       <div class="testimonial-item">
                         <img src="Nyox.jpg" class="testimonial-img" alt="" width="100" height="100">
                         <h3>Dr. Cliford Peter Mlimwa</h3>
+
+
+                        
                         <h4>NEU - Cyprus</h4>
+                        </div>
+                        <br><br>
+
+                            <div class="testimonial-item">
+                        <img src="https://www.svgrepo.com/show/327465/person-circle.svg" class="testimonial-img" alt="" width="100" height="100">
+                        <h3>Dr. Usman Sarumi </h3>
+
+
+                        
+                        <h4>NEU - Cyprus</h4>
+                        
+
+
+
+                        
                         <div class="portfolio">
                           <div class="portfolio-info">
                             <div class="portfolio-links">
@@ -398,6 +559,11 @@
                     </div>
                   </div>
                 </div>
+
+
+
+                
+
               </div> <!-- Local Organizing Chairs -->
 
               <div class="tab-pane" id="tab-7">
